@@ -6,7 +6,9 @@ public class ParserMain
 	{
 		TextParser textParser = new TextParser();
 		textParser.setEncoder(new UpperCaseEncoder());
+		textParser.setSaveEngine(new SaveToFile());
 
 		textParser.parse("    avafadogjoidfv  fgkdfopgfdp    ");
+		textParser.save();
 	}
 }
